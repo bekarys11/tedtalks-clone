@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  margin: 0;
+  background: #f1f3f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* LOGO */
+.logo {
+  border-bottom: 1px solid grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* HEADING */
+.heading {
+  padding: 1rem;
+  color: rgb(66, 66, 66);
+}
+.heading-line {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading-bold {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading-medium {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.heading-thin {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+/* SEARCH MENUS */
+.search-options {
+  padding: 0.8rem 0.5rem;
+  background: grey;
+  display: grid;
+  grid-template-columns: 14rem 12rem 12rem 12rem 5rem;
+  column-gap: 2rem;
+}
+
+.select {
+  padding: 0.4rem;
+}
+
+.ais-SearchBox select {
+  padding: 0.4rem;
 }
