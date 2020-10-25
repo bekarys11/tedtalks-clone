@@ -32,7 +32,7 @@ const Nav = () => {
       </div>
 
       <div className="search-options">
-        <SearchBox className="select" />
+        <SearchBox />
         <select name="topics" className="select__topics" defaultValue="topics">
           <option value="topics" disabled>
             Topics

@@ -1,18 +1,14 @@
 import React from 'react';
+import { config } from './config';
 import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch, Hits } from 'react-instantsearch-dom';
 import Nav from './components/Nav';
-
 import './App.css';
 
-//app id: TPPZ32GA6D
-//api key: edabfe75cb858d711a0818e206739ad6
-//index name: talks
+const my_id = config.api_id;
+const my_key = config.api_key;
 
-const searchClient = algoliasearch(
-  'TPPZ32GA6D',
-  'edabfe75cb858d711a0818e206739ad6'
-);
+const searchClient = algoliasearch(my_id, my_key);
 
 function App() {
   return (
